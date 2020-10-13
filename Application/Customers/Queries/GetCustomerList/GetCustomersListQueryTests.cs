@@ -19,6 +19,7 @@ namespace Architecture.Application.Customers.Queries.GetCustomerList
 
         private const int Id = 1;
         private const string Name = "Customer 1";
+        private const string Email = "vvduong@lacviet.com.vn";
 
         [SetUp]
         public void SetUp()
@@ -28,7 +29,8 @@ namespace Architecture.Application.Customers.Queries.GetCustomerList
             _customer = new Customer()
             {
                 Id = Id,
-                Name = Name
+                Name = Name,
+                Email = Email,
             };
 
             _mocker.GetMock<IDbSet<Customer>>()
@@ -50,6 +52,7 @@ namespace Architecture.Application.Customers.Queries.GetCustomerList
 
             Assert.That(result.Id, Is.EqualTo(Id));
             Assert.That(result.Name, Is.EqualTo(Name));
+            Assert.That(result.Email, Is.EqualTo(Email));
         }
     }
 }

@@ -16,6 +16,9 @@ namespace Architecture.Persistence.Customers
             Property(p => p.Name)
                 .IsRequired()
                 .HasMaxLength(50);
+
+            Property(p => p.Email)
+                .HasMaxLength(50);
         }
     }
 }

@@ -23,6 +23,7 @@ namespace Architecture.Persistence
             CreateProducts(database);
             
             CreateSales(database);
+
         }
 
         private void CreateCustomers(DatabaseService database)

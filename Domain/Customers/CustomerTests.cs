@@ -13,7 +13,7 @@ namespace Architecture.Domain.Customers
         private readonly Customer _customer;
         private const int Id = 1;
         private const string Name = "Test";
-
+        private const string Email = "vvduong@lacviet.com.vn";
 
         public CustomerTests()
         {
@@ -36,6 +36,15 @@ namespace Architecture.Domain.Customers
 
             Assert.That(_customer.Name, 
                 Is.EqualTo(Name));
+        }
+
+        [Test]
+        public void TestSetAndGetEmail()
+        {
+            _customer.Email = Email;
+
+            Assert.That(_customer.Email, 
+                Is.EqualTo(Email));
         }
     }
 }

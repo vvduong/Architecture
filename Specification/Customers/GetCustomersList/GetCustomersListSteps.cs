@@ -45,6 +45,9 @@ namespace Architecture.Specification.Customers.GetCustomersList
 
                 Assert.That(result.Name,
                     Is.EqualTo(model.Name));
+
+                Assert.That(result.Email,
+                    Is.EqualTo(model.Email));
             }
         }
     }

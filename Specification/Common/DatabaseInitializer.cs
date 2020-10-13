@@ -35,22 +35,23 @@ namespace Architecture.Specification.Common
         {
             var customers = new InMemoryDbSet<Customer>();
 
-            CreateCustomer(customers, 1, "Martin Fowler");
+            CreateCustomer(customers, 1, "Martin Fowler","vvduong@lacviet.com.vn");
 
-            CreateCustomer(customers, 2, "Uncle Bob");
+            CreateCustomer(customers, 2, "Uncle Bob", "vvduong@lacviet.com.vn");
 
-            CreateCustomer(customers, 3, "Kent Beck");
+            CreateCustomer(customers, 3, "Kent Beck", "vvduong@lacviet.com.vn");
 
             _mockDatabase.Setup(p => p.Customers)
                 .Returns(customers);
         }
 
-        private void CreateCustomer(IDbSet<Customer> customers, int id, string name)
+        private void CreateCustomer(IDbSet<Customer> customers, int id, string name,string email)
         {
             var customer = new Customer
             {
                 Id = id,
-                Name = name
+                Name = name,
+                Email =email,
             };
 
             customers.Add(customer);

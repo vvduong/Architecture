@@ -1,4 +1,5 @@
 using System.Data.Entity;
+using Architecture.Domain.Categories;
 using Architecture.Domain.Customers;
 using Architecture.Domain.Employees;
 using Architecture.Domain.Products;
@@ -15,6 +16,8 @@ namespace Architecture.Application.Interfaces
         IDbSet<Product> Products { get; set; }
         
         IDbSet<Sale> Sales { get; set; }
+
+        IDbSet<Category> Categories { get; set; }
 
         void Save();
     }

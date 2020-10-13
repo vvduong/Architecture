@@ -21,7 +21,8 @@ namespace Architecture.Application.Customers.Queries.GetCustomerList
                 .Select(p => new CustomerModel()
                 {
                     Id = p.Id, 
-                    Name = p.Name
+                    Name = p.Name,
+                    Email = p.Email
                 });
 
             return customers.ToList();
