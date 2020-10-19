@@ -38,7 +38,7 @@ namespace Architecture.Presentation.Menus
             return View(sales);
         }
 
-        [Route("{id:int}")]
+        [Route("{id:guid}")]
         public ViewResult Detail(Guid id)
         {
             var sale = _menuDetailQuery.Execute(id);
