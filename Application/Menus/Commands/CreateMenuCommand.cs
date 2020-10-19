@@ -30,7 +30,7 @@ namespace Architecture.Application.Menus.Commands
         {
             var date = _dateService.GetDate();
 
-            var menuModel = new MenuModel();
+            var menuModel = new MenusListItemModel();
             menuModel.Id = Guid.NewGuid();
             menuModel.Name = model.Name;
             menuModel.Icon = model.Icon;
@@ -38,6 +38,7 @@ namespace Architecture.Application.Menus.Commands
             menuModel.Created = date;
             menuModel.Modified = date;
             menuModel.MenuType = model.MenuType;
+            menuModel.NoOrder = model.NoOrder;
 
             var menu = _factory.Create(menuModel);
 

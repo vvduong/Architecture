@@ -8,11 +8,13 @@ using System.Threading.Tasks;
 
 namespace Architecture.Application.Menus.Commands.CreateMenu.Factory
 {
-    class MenuFactory : IMenuFactory
+    public class MenuFactory : IMenuFactory
     {
-        public Menu Create(MenuModel menuModel)
+        public Menu Create(MenusListItemModel menuModel)
         {
             var menu = new Menu();
+
+            menu.Id = menuModel.Id.Value;
 
             menu.Name = menuModel.Name;
 
@@ -20,7 +22,7 @@ namespace Architecture.Application.Menus.Commands.CreateMenu.Factory
 
             menu.Url = menuModel.Url;
 
-            menu.NoOrder = menuModel.NoOrder.Value;
+            menu.NoOrder = menuModel.NoOrder;
 
             menu.Created = DateTime.Now;
 

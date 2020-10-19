@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Architecture.Application.Menus.Queries.GetMenuList.MenusListItemModel>
+
+@{
+    ViewBag.Title = "Menus";
+}
+
+<h2>Menus</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Icon</th>
+            <th>Url</th>
+            <th>No Order</th>
+            <th>MenuType</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var menu in Model)
+        {
+            <tr>
+                <td><a href="menus/@menu.Id">@menu.Id</a></td>
+                <td>@menu.Name</td>
+                <td>@menu.Icon</td>
+                <td>@menu.Url</td>
+                <td>@menu.NoOrder</td>
+                <td>@menu.MenuType</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="pull-right">
+    <a class="btn btn-primary" href="menus/create">Create Menu</a>
+</div>
+

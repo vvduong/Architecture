@@ -10,6 +10,6 @@ namespace Architecture.Application.Menus.Commands.CreateMenu.Factory
 {
     public interface IMenuFactory
     {
-        Menu Create(MenuModel menuModel);
+        Menu Create(MenusListItemModel menuModel);
     }
 }

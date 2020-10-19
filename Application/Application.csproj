@@ -101,7 +101,7 @@
     <Compile Include="Menus\Queries\GetMenuDetail\MenuDetailModel.cs" />
     <Compile Include="Menus\Queries\GetMenuList\GetMenusListQuery.cs" />
     <Compile Include="Menus\Queries\GetMenuList\IGetMenusListQuery.cs" />
-    <Compile Include="Menus\Queries\GetMenuList\MenuModel.cs" />
+    <Compile Include="Menus\Queries\GetMenuList\MenusListItemModel.cs" />
     <Compile Include="Products\Queries\GetProductsList\GetProductsListQuery.cs" />
     <Compile Include="Products\Queries\GetProductsList\GetProductsListQueryTests.cs" />
     <Compile Include="Products\Queries\GetProductsList\IGetProductsListQuery.cs" />

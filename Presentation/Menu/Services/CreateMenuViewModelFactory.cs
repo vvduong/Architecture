@@ -8,6 +8,10 @@ namespace Architecture.Presentation.Menus.Services
 {
     public class CreateMenuViewModelFactory : ICreateMenuViewModelFactory
     {
+        public CreateMenuViewModelFactory()
+        {
+
+        }
         public CreateMenuViewModel Create()
         {
             var viewModel = new CreateMenuViewModel();

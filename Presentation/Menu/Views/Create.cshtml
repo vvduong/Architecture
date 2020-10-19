@@ -1,0 +1,34 @@
+﻿@model Architecture.Presentation.Menus.Models.CreateMenuViewModel
+
+@{
+    ViewBag.Title = "Create Menu";
+}
+
+<h2>Create Menu</h2>
+
+@using (Html.BeginForm("create", "menus", FormMethod.Post))
+{
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label">Name</label>
+            @Html.TextBoxFor(p => p.Menu.Name, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <label class="control-label">Icon</label>
+            @Html.TextBoxFor(p => p.Menu.Icon, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <label class="control-label">Url</label>
+            @Html.TextBoxFor(p => p.Menu.Url, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <label class="control-label">No Order</label>
+            @Html.TextBoxFor(p => p.Menu.NoOrder, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <label class="control-label">Menu Type</label>
+            @Html.TextBoxFor(p => p.Menu.MenuType, new { @class = "form-control" })
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+}

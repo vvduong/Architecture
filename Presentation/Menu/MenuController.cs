@@ -11,7 +11,7 @@ using System.Web.Mvc;
 
 namespace Architecture.Presentation.Menus
 {
-    [RoutePrefix("menus")]
+    [RoutePrefix("admin/menus")]
     public class MenuController : Controller
     {
         private readonly IGetMenusListQuery _menusListQuery;
@@ -33,17 +33,17 @@ namespace Architecture.Presentation.Menus
         [Route("")]
         public ViewResult Index()
         {
-            var sales = _menusListQuery.Execute();
+            var menus = _menusListQuery.Execute();
 
-            return View(sales);
+            return View(menus);
         }
 
         [Route("{id:guid}")]
         public ViewResult Detail(Guid id)
         {
-            var sale = _menuDetailQuery.Execute(id);
+            var menu = _menuDetailQuery.Execute(id);
 
-            return View(sale);
+            return View(menu);
         }
 
         [Route("create")]

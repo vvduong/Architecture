@@ -9,6 +9,6 @@ namespace Architecture.Application.Menus.Queries.GetMenuList
 {
     public interface IGetMenusListQuery
     {
-        List<MenuModel> Execute();
+        List<MenusListItemModel> Execute();
     }
 }

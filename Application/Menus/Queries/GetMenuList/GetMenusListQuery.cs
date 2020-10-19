@@ -16,10 +16,10 @@ namespace Architecture.Application.Menus.Queries.GetMenuList
             _database = database;
         }
 
-        public List<MenuModel> Execute()
+        public List<MenusListItemModel> Execute()
         {
             var menus = _database.Menus
-                .Select(p => new MenuModel
+                .Select(p => new MenusListItemModel
                 {
                     Id = p.Id,
                     Name = p.Name,
