@@ -157,6 +157,10 @@
     </Compile>
     <Compile Include="Home\HomeController.cs" />
     <Compile Include="Home\HomeControllerTests.cs" />
+    <Compile Include="Menus\MenuController.cs" />
+    <Compile Include="Menus\Models\CreateMenuViewModel.cs" />
+    <Compile Include="Menus\Services\CreateMenuViewModelFactory.cs" />
+    <Compile Include="Menus\Services\ICreateMenuViewModelFactory.cs" />
     <Compile Include="Products\ProductsController.cs" />
     <Compile Include="Products\ProductsControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -188,8 +192,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Customers\Models\" />
+    <Folder Include="Customers\Views\Menu\" />
     <Folder Include="Employees\Models\" />
     <Folder Include="Home\Models\" />
+    <Folder Include="Menus\Views\" />
     <Folder Include="Products\Models\" />
   </ItemGroup>
   <ItemGroup>

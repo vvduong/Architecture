@@ -17,6 +17,9 @@ namespace Architecture.Persistence.Categories
             Property(p => p.Name)
                 .IsRequired()
                 .HasMaxLength(255);
+
+            Property(p => p.Description)
+                .HasMaxLength(1000);
         }
         
     }

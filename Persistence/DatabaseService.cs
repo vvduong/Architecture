@@ -6,11 +6,13 @@ using Architecture.Application.Interfaces;
 using Architecture.Domain.Categories;
 using Architecture.Domain.Customers;
 using Architecture.Domain.Employees;
+using Architecture.Domain.Menus;
 using Architecture.Domain.Products;
 using Architecture.Domain.Sales;
 using Architecture.Persistence.Categories;
 using Architecture.Persistence.Customers;
 using Architecture.Persistence.Employees;
+using Architecture.Persistence.Menus;
 using Architecture.Persistence.Products;
 using Architecture.Persistence.Sales;
 
@@ -28,6 +30,8 @@ namespace Architecture.Persistence
         public IDbSet<Sale> Sales { get; set; }
 
         public IDbSet<Category> Categories { get; set; }
+
+        public IDbSet<Menu> Menus { get; set; }
 
         public DatabaseService() : base("Architecture")
         {
@@ -48,6 +52,7 @@ namespace Architecture.Persistence
             modelBuilder.Configurations.Add(new ProductConfiguration());
             modelBuilder.Configurations.Add(new SaleConfiguration());
             modelBuilder.Configurations.Add(new CategoryConfiguration());
+            modelBuilder.Configurations.Add(new MenuConfiguration());
         }
     }
 }

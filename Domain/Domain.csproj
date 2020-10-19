@@ -63,6 +63,7 @@
     <Compile Include="Customers\CustomerTests.cs" />
     <Compile Include="Employees\Employee.cs" />
     <Compile Include="Employees\EmployeeTests.cs" />
+    <Compile Include="Menus\Menu.cs" />
     <Compile Include="Products\Product.cs" />
     <Compile Include="Products\ProductTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

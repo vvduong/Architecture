@@ -86,9 +86,18 @@
     <Compile Include="DatabaseService.cs" />
     <Compile Include="DatabaseInitializer.cs" />
     <Compile Include="Employees\EmployeeConfiguration.cs" />
+    <Compile Include="Menus\MenuConfiguration.cs" />
     <Compile Include="Migrations\202010131100180_InitialCreate.cs" />
     <Compile Include="Migrations\202010131100180_InitialCreate.Designer.cs">
       <DependentUpon>202010131100180_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010190905489_InitialCreate1.cs" />
+    <Compile Include="Migrations\202010190905489_InitialCreate1.Designer.cs">
+      <DependentUpon>202010190905489_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010190931042_InitialCreate2.cs" />
+    <Compile Include="Migrations\202010190931042_InitialCreate2.Designer.cs">
+      <DependentUpon>202010190931042_InitialCreate2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Products\ProductConfiguration.cs" />
@@ -116,6 +125,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202010131100180_InitialCreate.resx">
       <DependentUpon>202010131100180_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010190905489_InitialCreate1.resx">
+      <DependentUpon>202010190905489_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010190931042_InitialCreate2.resx">
+      <DependentUpon>202010190931042_InitialCreate2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

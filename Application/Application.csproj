@@ -91,6 +91,17 @@
     <Compile Include="Employees\Queries\GetEmployeesList\IGetEmployeesListQuery.cs" />
     <Compile Include="Interfaces\IDatabaseService.cs" />
     <Compile Include="Interfaces\IInventoryService.cs" />
+    <Compile Include="Menus\Commands\CreateMenuCommand.cs" />
+    <Compile Include="Menus\Commands\CreateMenuModel.cs" />
+    <Compile Include="Menus\Commands\CreateMenu\Factory\IMenuFactory.cs" />
+    <Compile Include="Menus\Commands\CreateMenu\Factory\MenuFactory.cs" />
+    <Compile Include="Menus\Commands\ICreateMenuCommand.cs" />
+    <Compile Include="Menus\Queries\GetMenuDetail\GetMenuDetailQuery.cs" />
+    <Compile Include="Menus\Queries\GetMenuDetail\IGetMenuDetailQuery.cs" />
+    <Compile Include="Menus\Queries\GetMenuDetail\MenuDetailModel.cs" />
+    <Compile Include="Menus\Queries\GetMenuList\GetMenusListQuery.cs" />
+    <Compile Include="Menus\Queries\GetMenuList\IGetMenusListQuery.cs" />
+    <Compile Include="Menus\Queries\GetMenuList\MenuModel.cs" />
     <Compile Include="Products\Queries\GetProductsList\GetProductsListQuery.cs" />
     <Compile Include="Products\Queries\GetProductsList\GetProductsListQueryTests.cs" />
     <Compile Include="Products\Queries\GetProductsList\IGetProductsListQuery.cs" />
