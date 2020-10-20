@@ -2,35 +2,77 @@
 
 @{
     ViewBag.Title = "Menus";
+    Layout = "~/Shared/Views/_LayoutAdmin.cshtml";
 }
 
-<h2>Menus</h2>
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Icon</th>
-            <th>Url</th>
-            <th>No Order</th>
-            <th>MenuType</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var menu in Model)
-        {
-            <tr>
-                <td><a href="menus/@menu.Id">@menu.Id</a></td>
-                <td>@menu.Name</td>
-                <td>@menu.Icon</td>
-                <td>@menu.Url</td>
-                <td>@menu.NoOrder</td>
-                <td>@menu.MenuType</td>
-            </tr>
-        }
-    </tbody>
-</table>
-<div class="pull-right">
-    <a class="btn btn-primary" href="menus/create">Create Menu</a>
+
+<div class="container-fluid">
+    <h1 class="mt-4"></h1>
+    @*<ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="index.html">Admin</a></li>
+            <li class="breadcrumb-item active">Menus</li>
+        </ol>*@
+
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table mr-1"></i>
+            Danh sách menu
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Tên</th>
+                            <th>Icon</th>
+                            <th>Link</th>
+                            <th>Thứ tự</th>
+                            <th>Loại</th>
+                            <th>Sửa</th>
+                            <th>Xóa</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Tên</th>
+                            <th>Icon</th>
+                            <th>Link</th>
+                            <th>Thứ tự</th>
+                            <th>Loại</th>
+                            <th>Sửa</th>
+                            <th>Xóa</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @foreach (var menu in Model)
+                        {
+                            <tr>
+                                <td>@menu.Name</td>
+                                <td>@menu.Icon</td>
+                                <td>@menu.Url</td>
+                                <td>@menu.NoOrder</td>
+                                <td>@menu.MenuType</td>
+                                <td>
+                                    <a data-id="@menu.Id" class="btn btn-circle btn-icon-only yellow document-priority-edit-button">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a data-id="@menu.Id" class="btn btn-circle btn-icon-only red document-priority-delete-button">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
 
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#dataTable').DataTable();
+    });
+</script>

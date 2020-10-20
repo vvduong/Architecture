@@ -1,0 +1,651 @@
+/* here you can put your own css to customize and override the theme */
+
+/* quan ly van ban 2017 - ntbvan */
+
+
+/** inherit **/
+body, h1, h2, h3, h4, h5, h6 {
+   font-family:Roboto, Arial;
+}
+@media(min-width:992px){
+.md-pl-0{
+    padding-left:0!important;
+}
+.md-pr-0{
+    padding-right:0!important;
+}
+}
+.bold {
+    font-weight: 600!important;
+}
+.portlet.light>.portlet-title>.caption>.caption-subject {
+    font-size: 15px;
+    color: #222;
+}
+.portlet.light>.portlet-title>.tools {
+    padding: 10px 5px;
+    margin-top: 2px;
+}
+/*** layout 3 cot / scroll ***/
+body{
+    overflow:hidden;
+}
+.page-container {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+.page-content.lv-pageContent{
+    position:relative;
+    background-color: white;
+}
+div.lv-mainLeft, div.lv-mainRight{
+    position:absolute;
+    top:0;
+    bottom:0;
+}
+div.lv-mainLeft{
+    left:0;
+    width:350px;
+}
+.lv-list{
+    top:75px;
+    position:absolute;
+    left:0;
+    bottom:30px;
+    right:0;
+}
+div.lv-mainRight {
+    left:351px;
+    right:0; 
+}
+.lv-mainDetail{
+    position:absolute;
+    top:42px;
+    left:0;
+    right:0;
+    bottom:0;
+}
+div.slimScrollDiv{
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: 100%!important;
+}
+.scroller {
+    padding: 0 0px 0 0;
+    height:100%!important;
+    z-index:99999;
+}
+div.slimScrollBar{
+    opacity:0.6!important;
+    
+}
+/** layout **/
+/*main*/
+
+.lv-mainContent::before{
+    width: 1px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 350px;
+    content: "";
+    background-color: #b6b6b6;
+}
+div.lv-mainLeft .todo-userpic{
+    width:32px;
+    height:32px;
+    border:0;
+    background-color:#b6b6ff;
+}
+.page-header.navbar .page-logo .logo-default {
+    margin: 10px 0 0 0;
+    visibility:hidden;
+}
+.logon{
+    float: left;
+    width: 300px;
+    line-height: 26px;
+    color: #e3e6e8;
+    font-size: 15px;
+    padding-left: 15px;
+    border-left: 1px #33495b solid;
+    height: 26px;
+    margin-top: 12px;
+}
+/** menu left **/
+.userSetting a.nav-toggle{
+    display:block;
+    overflow:hidden;
+    font-weight:400!important;
+    color:#d7dbde!important;
+}
+.userSetting a.nav-toggle:hover{
+    background-color:transparent!important;
+}
+.userSetting ul{
+    clear:both;
+    margin-left:15px!important;
+}
+.userSetting .photo{
+    float:left;
+}
+.userSetting .photo img{
+    width:57px;
+    height:auto;
+    margin-right:10px;
+}
+.userSetting{
+    background-color:#002949;
+    border-bottom:1px #02345b solid!important;
+}
+.userSetting a{
+    padding:8px 15px!important;
+}
+.userSetting{
+    overflow:hidden;
+}
+.userNameDepartment{
+    float:left;
+    margin-top:10px;
+}
+div.userNameDepartment .timeline-body-time{
+    margin-left:0;
+    color:#acaeb1!important;
+}
+.iconSettings img{
+    margin-top: -6px;
+    margin-right: 6px;
+}
+.userSetting .sub-menu span.title{
+    line-height:18px;
+    display:inline-block;
+}
+/*cot giua*/
+.lv-search .m1.menu{
+    background-color:#0078d7;
+    height:40px;
+    line-height:40px;
+    border-left: 1px #268cdd solid;
+}
+#menu-center li {
+    margin: 0 9px 0 0;
+}
+.lv-search .m1.menu #menu-center a{
+    color:#fff;
+    font-size:14.2px;
+    font-weight:400;
+    text-transform:uppercase;
+}
+.lv-search .m1.menu #menu-center a:hover,.lv-search .m1.menu #menu-center a.active{
+    color: #ffed26;
+    text-decoration:none;
+}
+.lv-search .form-control{
+    background-color:#0078d7;
+    border-top:0;
+    border-left:1px #268cdd solid;
+    border-right:1px #268cdd solid;
+    border-bottom:1px #0063b2 solid;
+    color:#c9dff0!important;
+    font-style:italic;
+    font-weight:300;
+    padding-left:12px;
+    padding-right: 70px;
+}
+.lv-search .form-control::placeholder{
+    color:#c9dff0!important;
+}
+.input-icon-search {
+    position:absolute;
+    top:3px;
+    right:36px;
+    width:36px;
+    height:28px;
+    border-right:1px #3393df solid;
+    background: url('../img-QLVB/icon-search.png') no-repeat center center;
+}
+#searchfilter{
+    height:32px;
+    line-height:32px;   
+    border-bottom:1px #e5e5e5 solid; 
+}
+#searchfilter .dropdown-menu{
+    margin-top:0;
+}
+#searchfilter .dropdown-toggle:hover{
+    color:#d00;
+    cursor:pointer;
+}
+.input-group-search{
+    position:relative;
+    background-color: #0078d7;
+    border-top:1px #268cdd solid;
+}
+.input-group-search .input-icon{
+    margin-right:36px;
+}
+.input-group-addon {
+    position:absolute;
+    top:0;
+    right:0;
+    border: 0;
+    width:36px;
+    height:34px;
+    display:inline-block;
+    background: url('../img-QLVB/icon-3dot.png') no-repeat center center;
+}
+.todo-tasklist-item {
+    background: #fff;
+    padding: 10px 10px;
+    margin-bottom: 0;
+    border-bottom:1px #e2e4e6 solid;
+    overflow: inherit;
+}
+.todo-tasklist-item:hover, .todo-tasklist-item.selected{
+    background-color:#fffeeb!important;
+    border-bottom-color:#e6dfa7;
+}
+div.lv-mainLeft .lv-status{
+    text-align:right;
+    margin-top:5px;
+}
+.row.row-DocNumber{
+    margin-top:5px;
+    margin-bottom:7px;
+    clear:both;
+    color:#555;
+    margin-left:-10px;
+    margin-right:-10px;
+}
+.row.rowUser{
+    margin-left:-10px;
+    margin-right:-10px;
+}
+.row-DocNumber .col-md-6, .row.rowUser .col-md-6{
+    padding-left:10px;
+    padding-right:10px;
+}
+.row.rowUser .dropdown-menu {
+    left:auto;
+    right:10px;
+}
+.row.rowUser .dropdown-menu a{
+    max-width: 200px;
+    overflow: hidden;
+}
+.row-serial{
+    color:#777;
+}
+.status-value{
+    color:#fff;
+    font-size:12px;
+    padding:2px 12px;
+    white-space:nowrap;
+}
+.status-value.yellow {
+    background-color: #ef9200;
+}
+.status-value.green{
+    background-color: #5c9b2e;
+}
+.status-value.red {
+    background-color: #f44336;
+}
+.list-des{
+    padding-bottom:2px;
+    color:#111;
+    font-size:15px;
+    font-weight:400;
+}
+.todo-tasklist-item img {
+    margin: 0;
+}
+div.list-item-title {
+    color: #666;
+    font-size:15px;
+    font-weight:300;
+}
+a.todo-userpic-mor{
+    color:#555;
+    padding-left:6px;
+}
+a.todo-userpic-mor:hover{
+    text-decoration:none;
+    color:#ffa200;
+}
+.btn.gray.btn-outline{
+    padding: 2px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-color: #d3d7da;
+    color: #777;
+    background: 0 0;
+    margin-top:5px;
+}
+.btn.gray.btn-outline:hover{
+    border-color:#ffa200;
+    color:#ffa200;
+}
+/*detail*/
+.lv-mainTop{
+    height:42px;
+    line-height:42px;
+    background-color:#006fc7;
+    padding-right:15px;
+}
+.lv-mainTop a i{
+    margin-right:2px;
+}
+.lv-mainTop a{
+    color:#fff;
+    margin-left:15px;
+    font-size:13.5px;
+}
+.lv-mainTop a:hover {
+    color: #ffed26;
+    text-decoration:none;
+}
+.lv-detailCont{
+    background:linear-gradient(#006fc7, #7dc2f8);
+}
+.lv-detailCont-in{
+    background: url('../img-QLVB/bg-detail.png') no-repeat 95% 105%;
+    padding:5px 20px 20px 20px;
+}
+.lv-detailTitle{
+    font-size:28px;
+    margin-bottom:10px;
+}
+.lv-detailCont *{
+    color:#fff;
+}
+.lv-detailCont a:hover{
+    color:#ffed26;
+}
+.row.row-cont small {
+    font-size: 11px;
+}
+.row.row-cont {
+    margin-bottom:15px;
+}
+.row.row-cont label{
+    font-size:16px;
+}
+.lv-mainTop .fa-ellipsis-v{
+    width:30px;
+    color:#fff;
+    text-align:center;
+    font-weight:300;
+}
+.lv-mainTop{
+    position:relative;
+}
+.lv-mainTop .dropdown-menu{
+    margin-top:0;
+    right:10px;
+}
+/** detail xem nhieu hon **/
+.moreInfomation{
+    margin-bottom:10px;
+}
+.moreInfomation a{
+    color:#ffed26;
+}
+.linkTitle{
+    margin-bottom:10px;
+    font-size:15px;
+    font-weight:500;
+}
+.linkdocument .linkItem a{
+    display:inline-block;
+    padding:0 10px;
+    color:#fff;
+    line-height:12px;
+    background-color:#3397e5;
+    border-radius:15px!important;
+    font-size:12px;
+    height:24px;
+    line-height:24px;
+}
+.linkdocument .linkItem a:hover{
+    color:#ffed26;
+    text-decoration:none;
+}
+.linkdocument .linkAdd a{
+    width:24px;
+    border-radius:50%!important;
+    background:#ff9002 url('../img-QLVB/icon-taolienket.png') no-repeat center center;
+    text-indent:-9999px;
+}
+.linkdocument .linkAdd a:hover{
+    color:#ffb502;
+}
+/** timeline **/
+.timeline .timeline-body-content {
+    margin-top: 25px;
+}
+.portlet.light>.portlet-title {
+    min-height: 40px;
+}
+/** history **/
+.lv-detailHis{
+    padding:20px;
+    padding-bottom:0;
+}
+.timeline-badge-userpic{
+    width:42px!important;
+    height:42px!important;
+}
+.portlet > .portlet-title > .tools > a.collapse {
+    background-image: url('../img-QLVB/portlet-collapse-icon.png');
+}
+.timeline .timeline-badge {
+    float: left;
+    height: 46px;
+    width: 50px;
+    z-index:99;
+}
+.timeline .timeline-item {
+    padding-top: 5px;
+}
+.timeline-body .timeline-body-title{
+    font-size:15px;
+    text-transform:uppercase;
+    font-weight:500;
+}
+.timeline-body-time.font-grey-cascade{
+    font-size: 12px;
+    margin-left: 4px;
+}
+.lv-hisItem{
+    position:relative;
+    margin-bottom:25px;
+}
+.lv-hisDate{
+    width:90px;
+    margin-top:13px;
+    float:left;
+    color:#777;
+}
+.lv-hisCont{
+    margin-left:95px;
+    margin-right:150px;
+}
+.lv-hisStatus{
+    position:absolute;
+    top:15px;
+    right:0;
+    width:140px;
+    text-align:right;
+    color: #0078d7;
+    font-weight:500;
+    font-size:12px;
+}
+#documentHistory .timeline .timeline-body {
+    margin-left: 55px !important;
+    margin-top:0!important;
+    padding:0!important;
+    border-left:2px #a8a8a8 solid;
+    padding-left:12px!important;
+}
+.lv-hisCont .timeline-body-content{
+    color:#888;
+    font-style:italic;   
+}
+.documentHistorySort {
+    margin-top: -37px;
+}
+#documentHistory .timeline .timeline-badge-userpic {
+    border: 2px solid #f5f6fa;
+}
+/*** Processing ***/
+.lv-detailProcess, .lv-detailProcessR{
+    padding:20px;
+    clear:both;
+}
+.timeline {
+    margin: 0;
+}
+.timeline .timeline-body-time {
+    color: #887;
+}
+.timeline .timeline-body {
+    padding: 0 !important;
+    margin-top: 0 !important;
+    margin-left: 55px !important;
+    margin-bottom:10px;
+}
+.attShow{
+    color:#888;
+    font-size:11px;
+}
+.attShow .lv-fileName{
+    color:#222;
+}
+.attShow img{
+    margin-right:5px;
+}
+.lv-detailProcess .timeline-body-content{
+    margin-bottom:5px;
+    color:#666;
+}
+.timeline .timeline-badge-userpic {
+    border: 2px solid #fff!important;
+}
+a.timeline-body-title{
+    color:#222;
+}
+a.timeline-body-title:hover{
+    color:#000;
+    text-decoration:none;
+}
+.assignToUser img.todo-userpic{
+    width:28px;
+    height:28px;
+    border:0;
+}
+.todo-userpic-mor.AddTask{
+    width:28px;
+    height:28px;
+    background-color:#0078d7;
+    color:#fff;
+    font-size:18px;
+    line-height:27px;
+    text-align:center;
+    border-radius:50%!important;
+    display:inline-block;
+    margin-left: 5px;
+    padding-left: 0;
+}
+a.todo-userpic-mor.AddTask:hover {
+    color:#ffed26;
+}
+.timeline-attachment .btn.gray.btn-outline {
+    margin-top: 4px;
+}
+.assignToUser{
+    margin-right:10px;
+}
+.process{
+    margin-left:55px;
+    position:relative;
+    clear:both;
+    overflow:hidden;
+}
+.proDatePercent{
+    margin-bottom:7px;
+}
+.proPercent{
+    font-size:17px;
+    font-weight:400;
+}
+.timeline-badge .proHis{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:22px;
+    height:22px;
+    display:block;
+    text-align:center;
+    line-height:22px;
+    background-color:#0078d7;
+    border-radius:50%!important;
+}
+.timeline-badge .proHis .icon{
+    color:#fff;
+    font-size:12px;
+}
+.userBorder{
+    border:2px #dedede solid;
+    display: inline-block;
+    border-radius: 50%!important;
+}
+.userBorder.userXuLyChinh{
+    border-color:#0078d7;
+}
+.userBorder.userXuLyPhu{
+    border-color:#badc00;
+}
+.userBorder.userXuLyPhu + .proHis{
+    background-color:#badc00;
+}
+.userBorder.userTheodoi{
+    border-color:#45d1fd;
+}
+.userBorder.userTheodoi + .proHis{
+    background-color:#45d1fd;
+}
+.userItem {
+    clear: both;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.process::before {
+    background-color: #bbb!important;
+    width: 1px;
+    content: "";
+    position: absolute;
+    left: 37px;
+    bottom: 35px;
+    top: 15px;
+}
+/*** detail thaoluan **/
+.lv-detailChat{
+    padding:10px 20px;
+}
+.chats li.in .message {
+    border-left: 2px solid #3598dc;
+}
+.chats li.in .message .arrow {
+    border-right: 8px solid #3598dc;
+}
+.chats .body{
+    padding-top:5px;
+    color:#222;
+    font-size:14px;
+}
+.chats li .datetime{
+    color:#777;
+}

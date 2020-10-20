@@ -62,7 +62,7 @@ namespace Architecture.Presentation.Menus
 
             _createCommand.Execute(model);
 
-            return RedirectToAction("index", "menus");
+            return RedirectToAction("index", "admin/menus");
         }
     }
 }
