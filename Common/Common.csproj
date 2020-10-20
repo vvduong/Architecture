@@ -55,7 +55,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,8 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppSettings\AppSettings.cs" />
+    <Compile Include="Contants\Constant.cs" />
+    <Compile Include="Contants\SystemConstants.cs" />
     <Compile Include="Dates\DateService.cs" />
     <Compile Include="Dates\IDateService.cs" />
+    <Compile Include="Email\SendEmail.cs" />
     <Compile Include="Mocks\MockDbSetExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
