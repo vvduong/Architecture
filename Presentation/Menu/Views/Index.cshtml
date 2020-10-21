@@ -20,7 +20,7 @@
         </div>
         <div class="card-body">
             <div class="table-responsive">
-                <table class="table table-bordered" id="dataTableListMenus" width="100%" cellspacing="0">
+                <table class="table table-bordered admin-menus-table" id="dataTableListMenus" width="100%" cellspacing="0">
                     <thead>
                         <tr>
                             <th>Tên</th>
@@ -70,4 +70,10 @@
         </div>
     </div>
 </div>
-
+@section Scripts {
+    <script type="text/javascript">
+        $.getScript('/Content/scripts/project.menus.js').done(function () {
+            Vpa_Project.Injector.resolveDependency(Vpa_Project_Admin.Menus).init();
+        });
+    </script>
+}
