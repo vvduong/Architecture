@@ -20,7 +20,7 @@
         </div>
         <div class="card-body">
             <div class="table-responsive">
-                <table class="table table-bordered admin-menus-table" id="dataTableListMenus" width="100%" cellspacing="0">
+                <table class="table table-bordered admin-menus-table" width="100%" cellspacing="0">
                     <thead>
                         <tr>
                             <th>Tên</th>
@@ -53,12 +53,12 @@
                                 <td>@menu.NoOrder</td>
                                 <td>@menu.MenuType</td>
                                 <td>
-                                    <a data-id="@menu.Id" class="btn btn-circle btn-icon-only yellow document-priority-edit-button">
+                                    <a data-id="@menu.Id" class="btn btn-circle btn-icon-only yellow admin-menu-edit-button">
                                         <i class="fa fa-edit"></i>
                                     </a>
                                 </td>
                                 <td>
-                                    <a data-id="@menu.Id" class="btn btn-circle btn-icon-only red document-priority-delete-button">
+                                    <a data-id="@menu.Id" class="btn btn-circle btn-icon-only red admin-menu-delete-button">
                                         <i class="fa fa-trash"></i>
                                     </a>
                                 </td>
@@ -70,9 +70,12 @@
         </div>
     </div>
 </div>
+
+<div id="admin-menus-dynamic-content"></div>
+
 @section Scripts {
     <script type="text/javascript">
-        $.getScript('/Content/scripts/project.menus.js').done(function () {
+        $.getScript('/Content/scripts/project.admin.js').done(function () {
             Vpa_Project.Injector.resolveDependency(Vpa_Project_Admin.Menus).init();
         });
     </script>

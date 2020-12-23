@@ -64,5 +64,12 @@ namespace Architecture.Presentation.Menus
 
             return RedirectToAction("index", "admin/menus");
         }
+
+        public ViewResult AddEditMenu(Guid? id)
+        {
+            var model = _menuDetailQuery.Execute(id.Value);
+
+            return View(model);
+        }
     }
 }
