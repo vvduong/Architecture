@@ -1,0 +1,2 @@
+﻿Package manager console
+Update-Database -TargetMigration:0 | update-database -force | update-database -force

@@ -22,14 +22,16 @@ namespace Architecture.Application.Menus.Commands.CreateMenu.Factory
 
             menu.Url = menuModel.Url;
 
-            menu.NoOrder = menuModel.NoOrder;
+            menu.NoOrder = menuModel.NoOrder.Value;
 
             menu.Created = DateTime.Now;
 
             menu.Modified = DateTime.Now;
 
+            menu.ParentId = menuModel.ParentId.Value;
             // Note: Total price is calculated in domain logic
-
+            menu.CreatedBy = menuModel.CreatedBy.Value;
+            menu.ModifiedBy = menuModel.ModifiedBy.Value;
             return menu;
         }
     }

@@ -1,8 +1,7 @@
 {
   "requires": true,
   "lockfileVersion": 1,
-  "dependencies": {},
-  "name": "Presentation",
+  "name": "architecture",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
@@ -16,7 +15,14 @@
     "dev": "webpack-dev-server --config webpack.dev.config.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "vu duong",
   "license": "ISC",
-  "description": ""
+  "description": "architecture",
+  "dependencies": {
+    "rxjs": "^7.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "architecture"
+  }
 }

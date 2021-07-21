@@ -9,7 +9,8 @@ namespace Architecture.Persistence.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
             ContextKey = "Architecture.Persistence.DatabaseService";
         }
 

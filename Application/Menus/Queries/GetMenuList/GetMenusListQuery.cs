@@ -29,6 +29,7 @@ namespace Architecture.Application.Menus.Queries.GetMenuList
                     Created = p.Created,
                     Modified = p.Modified,
                     MenuType = p.MenuType,
+                    ParentId = p.ParentId,
                 });
 
             return menus.ToList();

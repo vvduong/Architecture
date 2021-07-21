@@ -30,6 +30,7 @@ namespace Architecture.Application.Menus.Queries.GetMenuDetail
                     Created = p.Created,
                     Modified = p.Modified,
                     MenuType = p.MenuType,
+                    ParentId = p.ParentId,
                 })
                 .Single();
 

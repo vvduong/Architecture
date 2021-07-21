@@ -5337,7 +5337,7 @@
     <Content Include="packages.config" />
     <Content Include="Shared\Views\_Layout.cshtml" />
     <Content Include="Shared\Views\Errors.cshtml" />
-    <Content Include="webpack.config.js" />
+    <Content Include="webpack.prod.config.js" />
     <Content Include="webpack.dev.config.js" />
     <Content Include="_ViewStart.cshtml" />
     <Content Include="Home\Views\Index.cshtml" />
@@ -5701,6 +5701,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\Models\" />
+    <Folder Include="Assets\" />
     <Folder Include="Customers\Models\" />
     <Folder Include="Customers\Views\Menu\" />
     <Folder Include="Employees\Models\" />
